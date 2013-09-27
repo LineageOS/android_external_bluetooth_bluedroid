@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da37b569_e18ee626",
+        "filename": "gki/ulinux/gki_ulinux.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 686,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2013-09-27T14:17:08Z",
+      "side": 1,
+      "message": "may also want to leave this brace on the line below to match the surrounding style.",
+      "revId": "350a2caba02a1b96882bfa9c346fc8dbf96e652f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
