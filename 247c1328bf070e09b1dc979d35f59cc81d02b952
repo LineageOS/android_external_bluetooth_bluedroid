@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7aa08908_e0cabca0",
+        "filename": "audio_a2dp_hw/audio_a2dp_hw.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2015-01-02T12:52:04Z",
+      "side": 1,
+      "message": "Isn\u0027t it better to use a range, ie if( samplerate \u003c\u003d 8k \u0026\u0026 48k\u003c\u003dsamplerate)",
+      "revId": "247c1328bf070e09b1dc979d35f59cc81d02b952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_c0cfc0ae",
+        "filename": "audio_a2dp_hw/audio_a2dp_hw.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2015-01-02T12:52:04Z",
+      "side": 1,
+      "message": "Same suggestion as above",
+      "revId": "247c1328bf070e09b1dc979d35f59cc81d02b952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
