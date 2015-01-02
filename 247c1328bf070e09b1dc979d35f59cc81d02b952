@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7aa08908_c046a022",
+        "filename": "audio_a2dp_hw/audio_a2dp_hw.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2015-01-02T12:56:57Z",
+      "side": 1,
+      "message": "No, the sample rates are limited to specific values.",
+      "parentUuid": "7aa08908_e0cabca0",
+      "revId": "247c1328bf070e09b1dc979d35f59cc81d02b952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7aa08908_c0cfc0ae",
         "filename": "audio_a2dp_hw/audio_a2dp_hw.h",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2015-01-02T12:52:04Z",
       "side": 1,
       "message": "Same suggestion as above",
+      "revId": "247c1328bf070e09b1dc979d35f59cc81d02b952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7aa08908_204cc441",
+        "filename": "audio_a2dp_hw/audio_a2dp_hw.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 32
+      },
+      "writtenOn": "2015-01-02T12:56:57Z",
+      "side": 1,
+      "message": "Same, but the SBC codec is limited to mono or stereo.",
+      "parentUuid": "7aa08908_c0cfc0ae",
       "revId": "247c1328bf070e09b1dc979d35f59cc81d02b952",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
