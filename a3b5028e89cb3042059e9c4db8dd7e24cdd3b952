@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_a1f8df7d",
+        "filename": "audio_a2dp_hw/audio_a2dp_hw.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 499,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-02-12T11:19:49Z",
+      "side": 0,
+      "message": "extra line removal here",
+      "revId": "a3b5028e89cb3042059e9c4db8dd7e24cdd3b952",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
