@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_d302fa3d",
+        "filename": "audio_a2dp_hw/audio_a2dp_hw.c",
+        "patchSetId": 6
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-02-18T13:57:15Z",
+      "side": 1,
+      "message": "Might just be better to acquire mutex for this call only. I think the second case where you are protecting the sk_write with it is unlikely. Also it still does weird me out to have a socket write protected by a mutex.",
+      "revId": "45736af7942bc13b00e68b7840b59d466f2ad5d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
