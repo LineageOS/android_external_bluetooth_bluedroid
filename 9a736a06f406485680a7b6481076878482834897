@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_53128ab5",
+        "filename": "gki/ulinux/gki_ulinux.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-02-18T12:53:14Z",
+      "side": 0,
+      "message": "GKI_timer_update calls GKI_disable and GKI_enable also. You probably want to restrict your GKI_disable() to modifying alarm_service.timer_last_expired_us only.",
+      "revId": "9a736a06f406485680a7b6481076878482834897",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
