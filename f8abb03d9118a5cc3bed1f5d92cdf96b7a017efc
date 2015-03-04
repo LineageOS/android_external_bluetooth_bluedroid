@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad45d7e_66aa8b72",
+        "filename": "btif/src/btif_storage.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 1968,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-04T16:39:04Z",
+      "side": 1,
+      "message": "Probably want to do C-style comments.",
+      "revId": "f8abb03d9118a5cc3bed1f5d92cdf96b7a017efc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad45d7e_c6b537d1",
+        "filename": "btif/src/btif_storage.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 1972,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-03-04T16:39:04Z",
+      "side": 1,
+      "message": "Can drop this set of parentheses.",
+      "revId": "f8abb03d9118a5cc3bed1f5d92cdf96b7a017efc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
