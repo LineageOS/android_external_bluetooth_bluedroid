@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8ec9b2_e4fdce6f",
+        "filename": "btif/src/btif_media_task.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 3209,
+      "author": {
+        "id": 13409
+      },
+      "writtenOn": "2015-05-28T08:30:59Z",
+      "side": 1,
+      "message": "MAX_OUTPUT_A2DP_QUEUE_MS / BTIF_MEDIA_TIME_TICK is just MAX_SINK_A2DP_FRAME_QUEUE_SZ (assuming 20ms media tick).  I would just redefine MAX_SINK_A2DP_FRAME_QUEUE_SZ as 360 / BTIF_MEDIA_TIME_TICK, then this math becomes a lot more obvious.\n\nAlternatively, changing the math order to:\n\nbtif_media_cb.media_feeding_state.pcm.bytes_per_tick * MAX_OUTPUT_A2DP_QUEUE_MS / BTIF_MEDIA_TIME_TICK;\n\nMakes it more apparent what\u0027s going on here.",
+      "revId": "6b8d569e25033c040d42fdc85627747b7cf6b6f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
