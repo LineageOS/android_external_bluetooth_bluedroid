@@ -16,6 +16,24 @@
       "revId": "6b8d569e25033c040d42fdc85627747b7cf6b6f7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a8ec9b2_670380b9",
+        "filename": "btif/src/btif_media_task.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 3209,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2015-05-28T21:31:19Z",
+      "side": 1,
+      "message": "I left the MAX_OUTPUT (renamed to MAX_SINK_) alone because I can\u0027t test that code path.  It would be better to make a similar change for the sink case if there was someone that can test it.  Otherwise, I\u0027d like to ignore that define.\n\nI changed the order.  (Obviously) the first order makes more sense to me but either is fine and it reads \"prettier\" to have all the constants at the end anyway.",
+      "parentUuid": "7a8ec9b2_e4fdce6f",
+      "revId": "6b8d569e25033c040d42fdc85627747b7cf6b6f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
