@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da87b5cf_696ea7cb",
+        "filename": "stack/btm/btm_ble_gap.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1853,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2017-06-09T18:21:45Z",
+      "side": 1,
+      "message": "This should fix it:\n\n--- a/stack/btm/btm_ble_gap.c\n+++ b/stack/btm/btm_ble_gap.c\n@@ -1850,7 +1850,7 @@ BOOLEAN btm_ble_cache_adv_data(tBTM_INQ_RESULTS *p_cur, UINT8 data_len, UINT8 *p\n         {\n             /* adv record size must be smaller than the total adv data size */\n             if ((length + 1) \u003e data_len) {\n-                BTM_TRACE_ERROR(\"BTM - got incorrect LE advertising data\");\n+                BTM_TRACE_ERROR0(\"BTM - got incorrect LE advertising data\");\n                 android_errorWriteLog(0x534e4554, \"33899337\");\n                 return FALSE;\n             }",
+      "range": {
+        "startLine": 1853,
+        "startChar": 16,
+        "endLine": 1853,
+        "endChar": 31
+      },
+      "revId": "3bee4c1b4b6803c16b32763ec316ba4b4202a28d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
