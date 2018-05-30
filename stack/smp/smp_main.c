@@ -449,6 +449,12 @@ void smp_sm_event(tSMP_CB *p_cb, tSMP_EVENT event, void *p_data)
         return;
     }
 
+    if (p_cb->role > 0x01) {
+      SMP_TRACE_ERROR("%s: invalid role %d", __func__, p_cb->role);
+      android_errorWriteLog(0x534e4554, "80145946");
+      return;
+    }
+
     SMP_TRACE_DEBUG5( "SMP Role: %s State: [%s (%d)], Event: [%s (%d)]",\
                       (p_cb->role == 0x01) ?"Slave" : "Master", smp_get_state_name( p_cb->state),
                       p_cb->state, smp_get_event_name(event), event) ;
