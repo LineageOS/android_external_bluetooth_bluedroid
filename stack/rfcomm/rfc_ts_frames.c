@@ -587,7 +587,9 @@ UINT8 rfc_parse_data (tRFC_MCB *p_mcb, MX_FRAME *p_frame, BT_HDR *p_buf)
         return (RFC_EVENT_BAD_FRAME);
     }
     RFCOMM_PARSE_TYPE_FIELD (p_frame->type, p_frame->pf, p_data);
-    RFCOMM_PARSE_LEN_FIELD (eal, len, p_data);
+    
+    eal = *(p_data)&RFCOMM_EA; 
+    len = *(p_data)++ >> RFCOMM_SHIFT_LENGTH1;
     if (eal == 0 && p_buf->len > RFCOMM_CTRL_FRAME_LEN) {
       len += (*(p_data)++ << RFCOMM_SHIFT_LENGTH2);
     } else if (eal == 0) {
