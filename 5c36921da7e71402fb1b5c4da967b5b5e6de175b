@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1545d75b_82e6221c",
+        "filename": "stack/gatt/gatt_sr.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 352,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-06-09T21:33:21Z",
+      "side": 1,
+      "message": "I must use GATT_TRACE_ERROR1 or get compile error.",
+      "range": {
+        "startLine": 352,
+        "startChar": 6,
+        "endLine": 352,
+        "endChar": 22
+      },
+      "revId": "5c36921da7e71402fb1b5c4da967b5b5e6de175b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c23154e8_aec4f5fa",
+        "filename": "stack/gatt/gatt_sr.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 1190,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-06-09T21:33:21Z",
+      "side": 1,
+      "message": "GATT_TRACE_ERROR3",
+      "range": {
+        "startLine": 1190,
+        "startChar": 6,
+        "endLine": 1190,
+        "endChar": 22
+      },
+      "revId": "5c36921da7e71402fb1b5c4da967b5b5e6de175b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
