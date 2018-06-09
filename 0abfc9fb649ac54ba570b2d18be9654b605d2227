@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b94d5779_df791442",
+        "filename": "bta/pan/bta_pan_act.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-06-09T20:37:38Z",
+      "side": 1,
+      "message": "This needs to be APPL_TRACE_ERROR2",
+      "range": {
+        "startLine": 215,
+        "startChar": 12,
+        "endLine": 215,
+        "endChar": 29
+      },
+      "revId": "0abfc9fb649ac54ba570b2d18be9654b605d2227",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "808530de_02e038f1",
+        "filename": "bta/pan/bta_pan_act.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-06-09T20:37:38Z",
+      "side": 1,
+      "message": "APPL_TRACE_WARNING0",
+      "range": {
+        "startLine": 223,
+        "startChar": 8,
+        "endLine": 223,
+        "endChar": 26
+      },
+      "revId": "0abfc9fb649ac54ba570b2d18be9654b605d2227",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
