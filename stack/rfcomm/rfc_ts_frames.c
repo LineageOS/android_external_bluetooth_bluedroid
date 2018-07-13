@@ -588,6 +588,13 @@ UINT8 rfc_parse_data (tRFC_MCB *p_mcb, MX_FRAME *p_frame, BT_HDR *p_buf)
     }
     RFCOMM_PARSE_TYPE_FIELD (p_frame->type, p_frame->pf, p_data);
     RFCOMM_PARSE_LEN_FIELD (eal, len, p_data);
+    if (eal == 0 && p_buf->len > RFCOMM_CTRL_FRAME_LEN) {
+      len += (*(p_data)++ << RFCOMM_SHIFT_LENGTH2);
+    } else if (eal == 0) {
+      RFCOMM_TRACE_ERROR1("Bad Length when EAL = 0: %d", p_buf->len);
+      //android_errorWriteLog(0x534e4554, "78288018");
+      return RFC_EVENT_BAD_FRAME;
+    }
 
     p_buf->len      -= (3 + !ead + !eal + 1);  /* Additional 1 for FCS */
     p_buf->offset   += (3 + !ead + !eal);
