@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9eb07eb5_792141dd",
+        "filename": "stack/smp/smp_main.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 438,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-07-18T00:10:44Z",
+      "side": 1,
+      "message": "SMP_TRACE_DEBUG1",
+      "range": {
+        "startLine": 438,
+        "startChar": 8,
+        "endLine": 438,
+        "endChar": 23
+      },
+      "revId": "fe8d65119fd992266d4a28b3f338d5dac07a9cee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
