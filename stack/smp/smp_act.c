@@ -17,6 +17,7 @@
  ******************************************************************************/
 
 #include "bt_target.h"
+#include <cutils/log.h>
 
 #if SMP_INCLUDED == TRUE
 
@@ -469,6 +470,15 @@ void smp_proc_master_id(tSMP_CB *p_cb, tSMP_INT_DATA *p_data)
     tBTM_LE_PENC_KEYS   le_key;
 
     SMP_TRACE_DEBUG0 (" smp_proc_master_id");
+
+    if (p_cb->rcvd_cmd_len < 11)  // 1(Code) + 2(EDIV) + 8(Rand)
+    {
+       android_errorWriteLog(0x534e4554, "111937027");
+       SMP_TRACE_ERROR2("%s: Invalid command length: %d, should be at least 11",
+                       __func__, p_cb->rcvd_cmd_len);
+       return;
+    }
+
     smp_update_key_mask (p_cb, SMP_SEC_KEY_TYPE_ENC, TRUE);
 
     STREAM_TO_UINT16(le_key.ediv, p);
