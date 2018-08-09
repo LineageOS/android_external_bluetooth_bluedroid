@@ -23,6 +23,8 @@
  ******************************************************************************/
 #include <string.h>
 
+#include <log/log.h>
+
 #include "gki.h"
 #include "avrc_api.h"
 #include "avrc_int.h"
@@ -587,6 +589,13 @@ static void avrc_msg_cback(UINT8 handle, UINT8 label, UINT8 cr,
             AVRC_TRACE_ERROR1("opcode %x",opcode);
         }
 
+        if (p_pkt->len < AVRC_AVC_HDR_SIZE) {
+          android_errorWriteLog(0x534e4554, "111803925");
+          AVRC_TRACE_WARNING("%s: message length %d too short: must be at least %d",
+                             __func__, p_pkt->len, AVRC_AVC_HDR_SIZE);
+          GKI_freebuf(p_pkt);
+          return;
+        }
 
         if ( ((avrc_cb.ccb[handle].control & AVRC_CT_TARGET) && (cr == AVCT_CMD)) ||
            ((avrc_cb.ccb[handle].control & AVRC_CT_CONTROL) && (cr == AVCT_RSP)) )
