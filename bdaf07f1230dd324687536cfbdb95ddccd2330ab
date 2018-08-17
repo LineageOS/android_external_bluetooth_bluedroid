@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "37411fae_3ce7123e",
+        "filename": "stack/gatt/gatt_cl.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 553,
+      "author": {
+        "id": 15734
+      },
+      "writtenOn": "2018-08-17T08:33:21Z",
+      "side": 1,
+      "message": "Shouldn\u0027t we rather use `GATT_TRACE_ERROR` here (since we are replacing `LOG(ERROR)`)?",
+      "range": {
+        "startLine": 553,
+        "startChar": 6,
+        "endLine": 553,
+        "endChar": 23
+      },
+      "revId": "bdaf07f1230dd324687536cfbdb95ddccd2330ab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
