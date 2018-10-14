@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2d0a7176_a39b4dc7",
+        "filename": "stack/mcap/mca_cact.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-10-14T23:33:01Z",
+      "side": 1,
+      "message": "This line should be removed according to original commit.  See cm-14.1 branch as example.",
+      "range": {
+        "startLine": 271,
+        "startChar": 4,
+        "endLine": 271,
+        "endChar": 49
+      },
+      "revId": "fbeff45701e7dc57baab0974ed9cc1118e896e76",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
