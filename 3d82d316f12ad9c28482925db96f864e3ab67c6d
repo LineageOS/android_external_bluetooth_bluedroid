@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2fb3ff84_ddc5987c",
+        "filename": "stack/avrc/avrc_api.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 582,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-10-14T22:48:18Z",
+      "side": 1,
+      "message": "This set of brackets should be removed.",
+      "range": {
+        "startLine": 582,
+        "startChar": 8,
+        "endLine": 582,
+        "endChar": 9
+      },
+      "revId": "3d82d316f12ad9c28482925db96f864e3ab67c6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a0952152_2d44855a",
+        "filename": "stack/avrc/avrc_api.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 598,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-10-14T22:48:18Z",
+      "side": 1,
+      "message": "The original commit moves this check above to line 583.  See cm-14.1 branch for example.",
+      "range": {
+        "startLine": 592,
+        "startChar": 0,
+        "endLine": 598,
+        "endChar": 9
+      },
+      "revId": "3d82d316f12ad9c28482925db96f864e3ab67c6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
