@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bad28f31_d1e4915f",
+        "filename": "stack/rfcomm/rfc_ts_frames.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 590,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2018-10-14T19:58:11Z",
+      "side": 1,
+      "message": "I believe this is missing here:\n\n+\n+    eal \u003d *(p_data)\u0026RFCOMM_EA;\n+    len \u003d *(p_data)++ \u003e\u003e RFCOMM_SHIFT_LENGTH1;",
+      "range": {
+        "startLine": 590,
+        "startChar": 0,
+        "endLine": 590,
+        "endChar": 4
+      },
+      "revId": "b5e707d922e533042a584f1e32398f89d64477e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
