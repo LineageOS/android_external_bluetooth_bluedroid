@@ -398,16 +398,31 @@ UINT8 *sdpu_extract_uid_seq (UINT8 *p, UINT16 param_len, tSDP_UUID_SEQ *p_seq)
         seq_len = 16;
         break;
     case SIZE_IN_NEXT_BYTE:
+        if (p + 1 > p_end)
+        {
+            *p_len = 0;
+            return NULL;
+        }
         if (sizeof(uint8_t) > param_len) return (NULL);
         param_len -= sizeof(uint8_t);
         BE_STREAM_TO_UINT8 (seq_len, p);
         break;
     case SIZE_IN_NEXT_WORD:
+        if (p + 2 > p_end)
+        {
+            *p_len = 0;
+            return NULL;
+        }
         if (sizeof(uint16_t) > param_len) return (NULL);
         param_len -= sizeof(uint16_t);
         BE_STREAM_TO_UINT16 (seq_len, p);
         break;
     case SIZE_IN_NEXT_LONG:
+        if (p + 4 > p_end)
+        {
+            *p_len = 0;
+            return NULL;
+        }
         if (sizeof(uint32_t) > param_len) return (NULL);
         param_len -= sizeof(uint32_t);
         BE_STREAM_TO_UINT32 (seq_len, p);
@@ -608,7 +623,7 @@ UINT8 *sdpu_extract_attr_seq (UINT8 *p, UINT16 param_len, tSDP_ATTR_SEQ *p_seq)
 ** Returns          void
 **
 *******************************************************************************/
-UINT8 *sdpu_get_len_from_type (UINT8 *p, UINT8 type, UINT32 *p_len)
+UINT8 *sdpu_get_len_from_type (UINT8 *p, UINT8 *p_end, UINT8 type, UINT32 *p_len)
 {
     UINT8   u8;
     UINT16  u16;
