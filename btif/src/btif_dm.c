@@ -915,6 +915,7 @@ static void btif_dm_ssp_cfm_req_evt(tBTA_DM_SP_CFM_REQ *p_ssp_cfm_req)
     bt_bdaddr_t bd_addr;
     bt_bdname_t bd_name;
     UINT32 cod;
+    BOOLEAN is_incoming = !(pairing_cb.state == BT_BOND_STATE_BONDING);
 
     BTIF_TRACE_DEBUG1("%s", __FUNCTION__);
 
@@ -944,6 +945,22 @@ static void btif_dm_ssp_cfm_req_evt(tBTA_DM_SP_CFM_REQ *p_ssp_cfm_req)
         pairing_cb.is_temp = FALSE;
 
     pairing_cb.is_ssp = TRUE;
+
+    /* If JustWorks auto-accept */
+    if (p_ssp_cfm_req->just_works)
+    {
+        /* Pairing consent for JustWorks NOT needed if:
+         * 1. Incoming temporary pairing is detected
+         */
+        if (is_incoming && pairing_cb.bond_type == BOND_TYPE_TEMPORARY)
+        {
+            BTIF_TRACE_EVENT1(
+                "%s: Auto-accept JustWorks pairing for temporary incoming",
+                __func__);
+            btif_dm_ssp_reply(&bd_addr, BT_SSP_VARIANT_CONSENT, TRUE, 0);
+            return;
+        }
+    }
 
     cod = devclass2uint(p_ssp_cfm_req->dev_class);
 
