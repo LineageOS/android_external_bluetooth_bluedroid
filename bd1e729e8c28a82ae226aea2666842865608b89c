@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "533a8c8c_0909d4f6",
+        "filename": "stack/sdp/sdp_utils.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 405,
+      "author": {
+        "id": 12604
+      },
+      "writtenOn": "2019-07-07T23:24:39Z",
+      "side": 1,
+      "message": "These lines go in \"UINT8 *sdpu_get_len_from_type\". Same for next two blocks.",
+      "range": {
+        "startLine": 401,
+        "startChar": 1,
+        "endLine": 405,
+        "endChar": 9
+      },
+      "revId": "bd1e729e8c28a82ae226aea2666842865608b89c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
